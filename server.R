@@ -78,5 +78,5 @@ shinyServer(function(input, output) {
       geom_point(aes(T, S), data=data.frame(S=S_pnt, T=Temp), size=4, color='red') +
       ylim(0, 4) +
       labs(x="Water Temperature, T (degC)", y=expression(paste(S[25]/S[T])))
-  })
+  }, width=600, height=400)
 })
